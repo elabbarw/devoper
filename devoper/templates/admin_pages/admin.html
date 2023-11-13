@@ -1,0 +1,24 @@
+<div class="main-content ">
+    <div id="modals"></div>
+        <script>
+                    $(document).ready(function () {
+                        adminmenu();
+                            });
+
+        </script>
+        <!-- Header -->
+<img src="static/assets/img/brand/rr.png"><small><b>Pipeline Runner - Admin Section</b></small><br>
+        <center>
+
+         <div class="table" id="admintable"></div>   
+         <div>
+            <button class="btn btn-primary" id="add-row">Add Project</button>
+            <button class="btn btn-primary" id="del-row">Remove Project</button>
+            <button class="btn btn-primary" id="clear">Empty the table</button>
+            <button class="btn btn-primary" id="reset">Reset</button>
+            <button class="btn btn-primary" id="saveconfig">Save Config</button>
+            <div id='configstatus'></div>
+        </div>
+        {% include 'includes/footer.html' %}
+        </center>
+    </div>

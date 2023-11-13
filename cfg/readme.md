@@ -1,0 +1,1 @@
+Files are added manually onto the server VM. 

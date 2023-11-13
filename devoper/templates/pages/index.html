@@ -1,0 +1,27 @@
+<div class="main-content ">
+    <div id="modals"></div>
+        <script>
+                    $(document).ready(function () {
+                        pipelinemenu();
+                            });
+
+        </script>
+        <!-- Header -->
+<img src="static/assets/img/brand/rr.png"><small><b>Pipeline Runner</b></small><br>
+<small>Project:</small><select id="project">
+{% for project in devops %}
+{% if project['ad_group'] in groups %}
+<option value = "{{ project['org'] }}->{{ project['prj'] }}">{{ project['org'] }}->{{ project['prj'] }}</option>
+{% endif %}
+{% endfor %}
+</select>
+
+        <center>
+        <button class="btn btn-primary" id='getpipelines'>Get Pipelines</button>
+            <div id="pipelinelist" class="table table-flush"></div> 
+            {% include 'includes/footer.html' %}
+        </center>
+    </div>
+    
+        <!-- Pipeline List End-->
+    
